@@ -1,0 +1,26 @@
+[0;1;32m●[0m systemd-resolved.service - Network Name Resolution
+     Loaded: loaded (]8;;file://alam-ms7d46/usr/lib/systemd/system/systemd-resolved.service\/usr/lib/systemd/system/systemd-resolved.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Tue 2025-07-29 17:57:04 -03; 4s ago
+ Invocation: 40c43730cb1149a0a5d134345cae799c
+       Docs: ]8;;man:systemd-resolved.service(8)\man:systemd-resolved.service(8)]8;;\
+             ]8;;man:org.freedesktop.resolve1(5)\man:org.freedesktop.resolve1(5)]8;;\
+             ]8;;https://systemd.io/WRITING_NETWORK_CONFIGURATION_MANAGERS\https://systemd.io/WRITING_NETWORK_CONFIGURATION_MANAGERS]8;;\
+             ]8;;https://systemd.io/WRITING_RESOLVER_CLIENTS\https://systemd.io/WRITING_RESOLVER_CLIENTS]8;;\
+   Main PID: 246995 (systemd-resolve)
+     Status: "[0;1;36mProcessing requests...[0m"
+      Tasks: 1[0;38;5;245m (limit: 37927)[0m
+     Memory: 3.1M (peak: 3.6M)
+        CPU: 41ms
+     CGroup: /system.slice/systemd-resolved.service
+             └─[0;38;5;245m246995 /usr/lib/systemd/systemd-resolved[0m
+
+jul 29 17:57:04 alam-ms7d46 systemd-resolved[246995]: Positive Trust Anchors:
+jul 29 17:57:04 alam-ms7d46 systemd-resolved[246995]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+jul 29 17:57:04 alam-ms7d46 systemd-resolved[246995]: . IN DS 38696 8 2 683d2d0acb8c9b712a1948b27f741219298d0a450d612c483af444a4c0fb2b16
+jul 29 17:57:04 alam-ms7d46 systemd-resolved[246995]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 170.0.0.192.in-addr.arpa 171.0.0.192.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa ipv4only.arpa resolver.arpa corp home internal intranet lan local private test
+jul 29 17:57:04 alam-ms7d46 systemd-resolved[246995]: Using system hostname 'alam-ms7d46'.
+jul 29 17:57:04 alam-ms7d46 systemd-resolved[246995]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mmDNS-IPv4: There appears to be another mDNS responder running, or previously systemd-resolved crashed with some outstanding transfers.[0m
+jul 29 17:57:04 alam-ms7d46 systemd-resolved[246995]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mmDNS-IPv6: There appears to be another mDNS responder running, or previously systemd-resolved crashed with some outstanding transfers.[0m
+jul 29 17:57:04 alam-ms7d46 systemd[1]: Started Network Name Resolution.
+jul 29 17:57:04 alam-ms7d46 systemd-resolved[246995]: eno1: Bus client set default route setting: yes
+jul 29 17:57:04 alam-ms7d46 systemd-resolved[246995]: eno1: Bus client set DNS server list to: 181.213.132.6, 181.213.132.7, 2804:14d:1:0:181:213:132:6, 2804:14d:1:0:181:213:132:7

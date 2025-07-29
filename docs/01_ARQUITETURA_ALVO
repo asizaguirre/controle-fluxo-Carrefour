@@ -1,0 +1,15 @@
+
+# Arquitetura Alvo
+
+A solução proposta adota uma abordagem de **microsserviços** visando alta disponibilidade, escalabilidade, flexibilidade e resiliência. Cada domínio é representado por um serviço independente e comunicante via mensageria assíncrona.
+
+## Componentes
+
+- **lancamentos-api**: Responsável pelo registro de lançamentos financeiros (crédito e débito).
+- **consolidado-api**: Realiza o cálculo do saldo diário consolidado com base em eventos recebidos.
+
+## Comunicação
+
+Utiliza o **RabbitMQ** como broker para tráfego de mensagens entre os serviços, garantindo desacoplamento e tolerância a falhas.
+
+
