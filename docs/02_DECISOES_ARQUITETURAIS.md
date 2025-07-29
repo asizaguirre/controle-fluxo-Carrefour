@@ -1,5 +1,1 @@
-
-# Decisões Arquiteturais
-
-Justificativas de tecnologias e padrões...
-
+# 🧠 Decisões Arquiteturais\n\nDetalhamento das decisões de design e padrões utilizados.
